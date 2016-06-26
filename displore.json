@@ -1,0 +1,9 @@
+{
+	"name": "Themes",
+	"requirement": "displore/themes",
+	"provides": {
+		"serviceprovider": "Displore\\Themes\\ThemesServiceProvider",
+		"facade": "Theme",
+		"facade-namespace": "Displore\\Themes\\Facades\\Theme"
+	}
+}
