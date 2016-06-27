@@ -26,18 +26,21 @@ class ThemeCommand extends Command
 
     /**
      * The Config instance.
+     *
      * @var \Illuminate\Config\Repository
      */
     protected $config;
 
     /**
      * The Filesystem instance.
+     *
      * @var \Illuminate\Filesystem\Filesystem
      */
     protected $filesystem;
 
     /**
      * Create a new Command instance.
+     *
      * @param \Illuminate\Config\Repository     $config
      * @param \Illuminate\Filesystem\Filesystem $filesystem
      */
@@ -69,8 +72,7 @@ class ThemeCommand extends Command
     /**
      * Create a new theme.
      * 
-     * @param  string $theme
-     * @return void
+     * @param string $theme
      */
     public function createTheme($theme)
     {
@@ -91,8 +93,7 @@ class ThemeCommand extends Command
     /**
      * Delete a theme.
      * 
-     * @param  string $theme
-     * @return void
+     * @param string $theme
      */
     public function deleteTheme($theme)
     {

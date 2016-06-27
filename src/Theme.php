@@ -24,6 +24,7 @@ class Theme
 
     /**
      * The configured location of all themes and assets.
+     *
      * @var array
      */
     protected $locations;
@@ -31,7 +32,8 @@ class Theme
     /**
      * Set the current theme.
      * 
-     * @param  string $theme
+     * @param string $theme
+     *
      * @return $this
      */
     public function set($theme)
@@ -110,8 +112,6 @@ class Theme
 
     /**
      * Register the theme paths in the view finder.
-     * 
-     * @return void
      */
     public function register()
     {
@@ -125,8 +125,9 @@ class Theme
     /**
      * Generate an asset path for a themed asset.
      * 
-     * @param  string $file
-     * @param  bool   $secure
+     * @param string $file
+     * @param bool   $secure
+     *
      * @return mixed
      */
     public function asset($file, $secure = null)
@@ -140,7 +141,8 @@ class Theme
     /**
      * Get the location of a directory, specified in the config.
      * 
-     * @param  string $dir
+     * @param string $dir
+     *
      * @return string
      */
     protected function location($dir)
